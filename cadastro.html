@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>pagCadastro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Produto.css"/>
+    </head>
+    <body>
+        <header>
+            <h1 align="center">Cadastro do produto</h1>
+        </header>
+        <nav>
+            <a href="cadastro.html">Cadastrar Produto</a> 
+            <a href="Deletar.html">Deletar Produto</a> 
+            <a href="Editar.html">Editar Produto</a>
+            <a href="Consultar.html">Consultar Produto</a>
+            <a href="index.html">Consultar Produto</a>
+        </nav>
+        <main> 
+            <article>
+                <form action="Cadastrar.jsp" method="POST">
+                
+                    <p><label for="codigo">Codigo:</label><input type="text" required name="codigo" id="codigo"></p>
+                    <p><label for="descricao">Descrição:</label> <input type="text" required name="descricao" id="descricao"></p>
+                    <p><label for="fabricacao">Fabricação:</label><input type="text" required name="fabricacao" id="fabricacao"></p>
+                    <p><label for="qtd">Quantidade:</label><input type="number" required name="qtd" id="qtd"></p>
+                    <p><label for="preco">Preço:</label>     <input type="text" required name="preco" id="preco"></p>
+                    <p>
+                        <input type="submit" value="Cadastrar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                </form>
+            </article>
+        </main>
+
+        <footer>
+            <p>Site produzido pelos alunos do IF da turma CTII248. Eduardo Rodrigues, Talita Gomes e Matheus Santana</p>
+        </footer>
+    </body>
+</html>

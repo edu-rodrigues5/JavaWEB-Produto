@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+default:
+--cor-main:#d8c5ba;
+  --cor0:rgb(214, 189, 151);
+  --cor1:#A89183;
+  --cor2:#B96734;
+  --cor3:#714A32;
+  --cor4:#654C3D;
+  --cor5:#322E2A;
+
+  
+azul:
+  --cor-main:#d8c5ba;
+  --cor0:rgb(214, 189, 151);
+  --cor1:#5CD9FA;
+  --cor2:#6FBBCF;
+  --cor3:#749AA5;
+  --cor4:#6A777A;
+  --cor5:#3D4C50;
+  --cor6:#1E2F33;
+*/
+:root{
+  --cor-main:#def6ff;
+  --cor0:#66acc0;
+  --cor1:#5CD9FA;
+  --cor2:#6FBBCF;
+  --cor3:#749AA5;
+  --cor4:#6A777A;
+  --cor5:#3D4C50;
+  --cor6:#1E2F33;
+
+  --fonte-padrao:Arial, Verdana, Helvetica, sans-serif;
+  --fonte-destaque: "Montserrat", sans-serif;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+background-color: var(--cor0);
+font-family: var(--fonte-padrao);
+}
+
+header{
+  background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+  min-height: 150px;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+header > h1{
+  margin-bottom: 20px;
+  font-family: var(--fonte-destaque);
+  font-size: 3em;
+}
+
+header > p{
+  font-family: var(--fonte-padrao);
+  font-size: 1.2em;
+  max-width: 500px;
+  padding: 10px 0px 10px 0px;
+  margin: auto;
+}
+
+nav{
+  background-color: var(--cor5);
+  padding-left: 10px;
+  display: flex;
+}
+
+nav > a{
+  width: 120px;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav > a:hover{
+  background-color: var(--cor2);
+}
+
+main{
+  background-color: var(--cor-main);
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+}
+main h1{
+  color: var(--cor5);
+  font-family: var(--fonte-destaque);
+}
+
+main .produto{
+  display: inline-block;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+main img{
+  width: 100%;
+  height: auto;
+}
+
+main p{
+  margin: 15px 0px;
+  text-align: justify;
+  line-height: 2em;
+}
+footer{
+  padding: 10px;
+  background-color: var(--cor5);
+  color: white;
+  text-align: center;
+}
+
+.produtos{
+  padding: 0 6px;
+  float: left;
+  width: 24.9%;
+}
+
+.produto{
+  width: 100%;
+  border: 1px solid #969696;
+  background-color: #ebfaff;
+}
+
+.produto:hover{
+  border: 1px solid #474747;
+}
+
+.produto p{
+  padding: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+  .produtos{
+    width: 49.9%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .produtos {
+    width: 100%;
+    
+  }
+  .nav a {
+    width: 25%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
